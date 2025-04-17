@@ -1,0 +1,203 @@
+
+/*
+Cor tema1: #0078bf 
+Cor tema2: #fe0d10
+Cor tema3: #fe0d10
+Cor tema4: #332877
+*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    user-select: none;
+}
+
+h1 {
+    background: linear-gradient(to right, #0078bf, #fe0d10);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.loading_background {
+    position: fixed;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: efeito_de_chama 5s infinite;
+}
+
+.mini_logo {
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.input-group {
+    display: flex;
+    width: 40%;
+    max-width: 300px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+label {
+    color: #5e5e5e;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    outline: none;
+    color: #5e5e5e;
+}
+
+.invalid {
+    border: 2px solid #f39496;
+}
+
+.disabled {
+    background-color: #ccc;
+    cursor: default;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+button {
+    background-color: #0078bf;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 15%;
+    min-width: 80px;
+    max-width: 100px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 900;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+a {
+    color: #332877;
+}
+
+a:visited {
+    color: #fe0d10;
+}
+
+.password_reveal {
+    position: relative;
+    top: -50%;
+    left: 100%;
+    transform: translateY(25%);
+    cursor: pointer;
+    color: #3c3c3c;
+}
+
+@keyframes efeito_de_chama {
+    0% {
+        transform: matrix(1, 0, 0.05, 1, 0, 0) translate(-50%, -50%);
+    }
+    5% {
+        transform: matrix(1, 0, -0.01, 1, 0, 0) translate(-50%, -50%);
+    }
+    10% {
+        transform: matrix(1, 0, 0.01, 1, 0, 0) translate(-50%, -50%);
+    }
+    15% {       
+        transform: matrix(1, 0, -0.02, 1, 0, 0) translate(-50%, -50%);
+    }
+    20% {
+        transform: matrix(1, 0, 0.05, 1, 0, 0) translate(-50%, -50%);
+    }
+    25% {
+        transform: matrix(1, 0, -0.07, 1, 0, 0) translate(-50%, -50%);
+    }
+    30% {
+        transform: matrix(1, 0, 0.02, 1, 0, 0) translate(-50%, -50%);
+    }
+    35% {
+        transform: matrix(1, 0, -0.04, 1, 0, 0) translate(-50%, -50%);
+    }
+    40% {
+        transform: matrix(1, 0, 0.03, 1, 0, 0) translate(-50%, -50%);
+    }
+    45% {
+        transform: matrix(1, 0, -0.07, 1, 0, 0) translate(-50%, -50%);
+    }
+    50% {
+        transform: matrix(1, 0, 0.04, 1, 0, 0) translate(-50%, -50%);
+    }
+    55% {
+        transform: matrix(1, 0, -0.05, 1, 0, 0) translate(-50%, -50%);
+    }
+    60% {
+        transform: matrix(1, 0, 0.04, 1, 0, 0) translate(-50%, -50%);
+    }
+    65% {
+        transform: matrix(1, 0, -0.01, 1, 0, 0) translate(-50%, -50%);
+    }
+    70% {
+        transform: matrix(1, 0, 0.05, 1, 0, 0) translate(-50%, -50%);
+    }
+    75% {
+        transform: matrix(1, 0, -0.05, 1, 0, 0) translate(-50%, -50%);
+    }
+    80% {
+        transform: matrix(1, 0, 0.05, 1, 0, 0) translate(-50%, -50%);
+    }
+    85% {
+        transform: matrix(1, 0, -0.03, 1, 0, 0) translate(-50%, -50%);
+    }
+    90% {
+        transform: matrix(1, 0, 0.05, 1, 0, 0) translate(-50%, -50%);
+    }
+    95% {
+        transform: matrix(1, 0, -0.03, 1, 0, 0) translate(-50%, -50%);
+    }
+    100% {
+        transform: matrix(1, 0, 0.05, 1, 0, 0) translate(-50%, -50%);
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
